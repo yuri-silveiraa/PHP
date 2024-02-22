@@ -54,3 +54,21 @@ foreach ($ingredientes as $chave => $valor) {
     printf(($chave + 1).':'.$valor."\n");
     // echo $ingredientes."\n";
 }
+
+$array = range(50, 20);
+
+if (array_key_exists(5, $array)) { // verifica se existe tal chave
+    echo $array[5];
+} else {
+    echo 'não existe';
+}
+
+$dados = [
+    'nome' => 'yuri',
+    'idade' => 30,
+    'empresa' => 'mdias',
+    'cor' => 'branco',
+];
+
+$chaves = array_keys($dados); // cria um novo array com as chaves de outro array passado
+$valores = array_values($dados); // cria um novo array com os valores de outro array passado
